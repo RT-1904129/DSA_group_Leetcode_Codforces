@@ -3,13 +3,13 @@ using namespace std;
 typedef unsigned long long int ulli;
 typedef long long int lli;
 typedef long int li;
-	
+
 
 
 void solve(){
-	lli a,b;
-	cin>>a>>b;
-	
+	lli a,b,c;
+	cin>>a>>b>>c;
+	cout<<(a+b+c) << " "<<(b+c)<<" "<<c<<"\n";
 	 
 }
 
