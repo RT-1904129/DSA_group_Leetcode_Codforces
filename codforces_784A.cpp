@@ -7,12 +7,17 @@ typedef long int li;
 
 
 void solve(){
-	lli a,b=0;
-	
-	
-	
-	
-	 
+	lli a,b,i=0,result=0;
+	cin>>a;
+	if(a%2){
+		if(a>1) cout<<1;
+		else cout<<3;
+	}
+	else{
+		if(!(a&(a-1))) cout<<a+1;
+		else cout<<(a&(~(a-1)));
+	}
+	cout<<"\n";
 }
 
 

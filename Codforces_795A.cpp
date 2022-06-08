@@ -7,10 +7,15 @@ typedef long int li;
 
 
 void solve(){
-	lli a,b=0;
-	
-	
-	
+	lli a,b;
+	cin>>a;
+	lli odd=0,even=0;
+	for(int i=0;i<a;i++){
+		cin>>b;
+		if(b%2) odd++;
+		else even++;
+	}
+	cout<<min(odd,even)<<"\n";
 	
 	 
 }

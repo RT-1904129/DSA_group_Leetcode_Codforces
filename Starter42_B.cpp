@@ -7,12 +7,19 @@ typedef long int li;
 
 
 void solve(){
-	lli a,b=0;
+	lli a,b,count=0;
+	string str;
+	cin>>b;
+	cin>>str;
+	a = str.length();
+	for(int i=0;i<a-1;i++){
+		if(str[i]=='1' && str[i+1]=='0') count++;
+	}
 	
-	
-	
-	
-	 
+	if(count>1) cout<<count*2-1;
+	else if(count==1) cout<<2;
+	else cout<<1;
+	cout<<"\n";
 }
 
 

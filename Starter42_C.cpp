@@ -7,11 +7,19 @@ typedef long int li;
 
 
 void solve(){
-	lli a,b=0;
-	
-	
-	
-	
+	lli a,b;
+	cin>>a>>b;
+	int count=0;
+	while(true){
+		if(a%3 == 0) break;
+		if(b%3 == 0) break;
+		if(a>b){
+			a = abs(b-a);
+		}
+		else b = abs(a-b);
+		count++;
+	}
+	cout<<count<<"\n";
 	 
 }
 

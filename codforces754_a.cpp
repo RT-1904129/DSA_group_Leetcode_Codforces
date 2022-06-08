@@ -7,13 +7,24 @@ typedef long int li;
 
 
 void solve(){
-	lli a,b=0;
-	
-	
-	
-	
-	 
+	lli n,b,sum=0;
+	cin>>n;
+	vector<int>arr(n);
+	for(int i=0;i<n;i++) {
+		cin>>arr[i];
+		sum+=arr[i];
+	}
+	for(int i=0;i<n;i++){
+		lli k =(sum-arr[i])/(n-1);
+		if(k == arr[i] && (((sum-arr[i])%(n-1)) == 0 )){
+			cout<<"YES\n";
+			return;
+		}
+	}
+	cout<<"NO\n";
 }
+
+
 
 
 
